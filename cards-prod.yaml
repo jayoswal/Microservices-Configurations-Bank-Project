@@ -4,7 +4,7 @@ build:
 cards:
   environment: PROD
   developer:
-    name: Foo 2 Developer - PROD - Change
+    name: Foo 2 Developer - PROD - Change 2
     location: HQ
   email: "{cipher}5252312665a2efdc8663d1e4c75c1385c12c6a3ad2641a526a65df583cd15d3c"
   contact:
