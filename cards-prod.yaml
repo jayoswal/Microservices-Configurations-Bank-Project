@@ -2,9 +2,9 @@ build:
   version: 3.0.0
 
 cards:
-  environment: PROD
+  environment: DEFAULT - PROD - Change 3
   developer:
-    name: Foo 2 Developer - PROD - Change 2
+    name: Foo 2 Developer - PROD
     location: HQ
   email: "{cipher}5252312665a2efdc8663d1e4c75c1385c12c6a3ad2641a526a65df583cd15d3c"
   contact:
