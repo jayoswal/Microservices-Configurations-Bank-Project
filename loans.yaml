@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: "{cipher}cb810f2d416826fc79d17f4931f388477fb632fe38329ab41fdd514740929f42"
+    password: ''
+
+  h2:
+    console:
+      enables: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+build:
+  version: 1.0.0
+
+loans:
+  environment: DEFAULT - DEV
+  developer:
+    name: Jay Oswal - DEV
+    location: HQ
+  email: "{cipher}5252312665a2efdc8663d1e4c75c1385c12c6a3ad2641a526a65df583cd15d3c"
+  contact:
+    - "{cipher}2baf80c8089acde69d5a71376c9c68136d1f9661fde282196734caad88bf2a09"
+    - "{cipher}3880d432d3b40241599d150b3cd2fd39d387ddac8ae0717192933a041f2babae"
+
+
