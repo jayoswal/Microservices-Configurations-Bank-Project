@@ -18,6 +18,12 @@ spring:
       hibernate:
         format_sql: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 build:
   version: 1.0.0
 
