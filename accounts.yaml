@@ -19,6 +19,12 @@ spring:
       hibernate:
         format_sql: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 # ENV SPECIFIC PROPERTIES FOR ACCOUNTS #
 # To get property value using @Value("${build.version}")
 build:
