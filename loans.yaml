@@ -12,9 +12,9 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    sql:
-      init:
-        mode: always
+  sql:
+    init:
+      mode: always
 
 management:
   endpoints:
