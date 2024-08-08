@@ -2,7 +2,7 @@ build:
   version: 2.0.0
 
 cards:
-  environment: QA
+  environment: DEFAULT - QA
   developer:
     name: Jay Oswal - QA
     location: HQ
