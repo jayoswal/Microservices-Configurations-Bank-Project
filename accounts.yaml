@@ -1,24 +1,54 @@
 spring:
   datasource:
-    username: root
-    password: password
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: "{cipher}cb810f2d416826fc79d17f4931f388477fb632fe38329ab41fdd514740929f42"
+    password: ''
+
+  h2:
+    console:
+      enabled: true
 
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         format_sql: true
-  sql:
-    init:
-      mode: always
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+ app:
+   name: accounts
+   description: "Accounts Microservice of Bank"
+   version: "s8.0.0"
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+endpoints:
+  shutdown:
+    enabled: true
+
 
 # ENV SPECIFIC PROPERTIES FOR ACCOUNTS #
 # To get property value using @Value("${build.version}")
