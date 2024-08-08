@@ -2,7 +2,7 @@ build:
   version: 3.0.0
 
 cards:
-  environment: DEFAULT - PROD - Change 4
+  environment: DEFAULT - PROD - Change 4 - Section 6
   developer:
     name: Foo 2 Developer - PROD
     location: HQ
