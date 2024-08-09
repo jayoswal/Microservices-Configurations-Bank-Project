@@ -4,8 +4,8 @@ management:
       exposure:
         include: "*"
   info:
-   env:
-     enabled: true
+    env:
+      enabled: true
   endpoint:
     gateway:
       enabled: true
@@ -25,10 +25,3 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://localhost:8070/eureka/}
-
-spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
