@@ -1,21 +1,5 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  info:
-    env:
-      enabled: true
-  endpoint:
-    gateway:
-      enabled: true
-
-
-info:
-  app:
-    name: gatewayserver
-    description: "Gateway Server of Bank"
-    version: "s9.0.0"
+server:
+  port: 8072
 
 eureka:
   instance:
