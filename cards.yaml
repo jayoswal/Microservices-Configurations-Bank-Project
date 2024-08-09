@@ -36,6 +36,16 @@ management:
     env:
       enabled: true
 
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+      # default for eureka is 8761 port
+
 build:
   version: 1.0.0
 
