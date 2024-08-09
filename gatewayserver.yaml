@@ -9,3 +9,27 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://localhost:8070/eureka/}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: "gatewayserver"
+    description: "Bank's Gateway Server Application"
+    version: "s9.0.0"
+
+logging:
+  level:
+    com:
+      jayoswal:
+        gatewayserver: DEBUG
