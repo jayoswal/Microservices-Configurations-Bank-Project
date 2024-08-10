@@ -45,6 +45,12 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://localhost:8070/eureka/}
 
+logging:
+  level:
+    com:
+      jayoswal:
+        loans: DEBUG
+
 build:
   version: 1.0.0
 

@@ -45,6 +45,12 @@ management:
     env:
       enabled: true
 
+logging:
+  level:
+    com:
+      jayoswal:
+        accounts: DEBUG
+
 
 # ENV SPECIFIC PROPERTIES FOR ACCOUNTS #
 # To get property value using @Value("${build.version}")
